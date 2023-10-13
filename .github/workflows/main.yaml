@@ -9,8 +9,9 @@ jobs:
         
       run: |
           
-          echo "Hello World"
+          echo "installing----------------------------------------------"
           pip install awscli==1.18.217 > /dev/null
+          echo "pip install completed-----------------------------------"
           aws --version
 
   build2:
