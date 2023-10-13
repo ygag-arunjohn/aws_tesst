@@ -10,7 +10,7 @@ jobs:
       run: |
           
           echo "Hello World"
-          pip install awscli==1.18.217
+          pip install awscli==1.18.217 > /dev/null
           aws --version
 
   build2:
