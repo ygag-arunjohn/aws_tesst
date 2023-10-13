@@ -13,7 +13,7 @@ jobs:
           pip install awscli==1.18.217 > /dev/null
           echo "pip install completed-----------------------------------"
           aws --version
-          echot "for aws path ------------------------------------------"
+          echo "for aws path ------------------------------------------"
           which aws
 
       
