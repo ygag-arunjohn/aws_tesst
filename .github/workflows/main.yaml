@@ -5,19 +5,19 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: testing on normal runner
+    - name: testing on normal runner
         
-        run: |
+      run: |
           
           echo "Hello World"
           pip install awscli==1.18.217
           aws --version
 
-  build:
+  build2:
     runs-on: self-hosted
     steps:    
-      - name: testing on self-hosted
+    - name: testing on self-hosted
 
-        run: |
+      run: |
 
         echo "hello programmers"
