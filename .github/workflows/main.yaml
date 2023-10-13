@@ -1,0 +1,23 @@
+name: printing hello
+on: workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: testing on normal runner
+        
+        run: |
+          
+          echo "Hello World"
+          pip install awscli==1.18.217
+          aws --version
+
+  build:
+    runs-on: self-hosted
+    steps:    
+      - name: testing on self-hosted
+
+        run: |
+
+        echo "hello programmers"
